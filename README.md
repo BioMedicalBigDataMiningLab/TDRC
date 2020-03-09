@@ -1,4 +1,11 @@
-# TDRC
-This is the source code based on python for the obove unpublished paper.
+# Tensor Decomposition with Relational Constraints
+This is our Python implementation for the unpublished paper.
 
-this code use the tensor learning tool "tensorly" referring to "Jean Kossaifi, Yannis Panagakis, Anima Anandkumar and Maja Pantic, TensorLy: Tensor Learning in Python, Journal of Machine Learning Research (JMLR), 2019, volume 20, number 26."
+# Introduction
+Tensor Decomposition with Relational Constraints (TDRC) is a tensor decomposition method for predicting 
+# Environment Requirement
+The code has been tested running under Python 3.6.8. The required packages are as follows:
+   * tensorly == 0.4.3
+   * numpy == 1.16.4
+# Arguments--
+* 
