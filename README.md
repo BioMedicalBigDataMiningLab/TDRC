@@ -1,5 +1,7 @@
 # Tensor Decomposition with Relational Constraints
 This is our Python implementation for the unpublished paper.
+Tensor Decomposition with Relational Constraints for Predicting Multiple Types of MicroRNA-disease Associations
+https://arxiv.org/abs/1911.05584
 
 ## Introduction
 Tensor Decomposition with Relational Constraints (TDRC) is a tensor decomposition method for predicting multiple types of microRNA-disease associations, which incorporates the miRNA-miRNA similarity and the disease-disease similarity.
