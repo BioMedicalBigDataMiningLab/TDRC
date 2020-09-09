@@ -86,6 +86,7 @@ def CG(X_initial, A, B, D, mu, tol, max_iter):
         if err < tol:
 
             print("CG convergence: iter = %d" % i)
+            break
 
         beta = np.trace(R * R.T) / R_norm
         P = R + beta * P
