@@ -44,7 +44,7 @@ class Experiments(object):
             for t in range(sample_num_eval):
                 predict_matrix = predict_tensor[test_index[0][t], test_index[1][t]]
                 predict_score = np.mat(predict_matrix.flatten())
-                real_matrix = association_tensor[test_index[0][t], test_index[1][t]]
+                real_matrix = self.mir_dis_data.type_tensor[test_index[0][t], test_index[1][t]]
                 real_score = np.mat(real_matrix.flatten())
                 positive_num = real_score.sum()
                 real_sum = real_sum + positive_num
