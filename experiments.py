@@ -37,7 +37,7 @@ class Experiments(object):
                                              beta=self.parameters['beta'], lam=self.parameters['lam'],
                                              tol=1e-6, max_iter=500)
             TP = 0
-            recall = 0
+           
             real_sum = 0
 
             sample_num_eval = np.array(test_index).shape[1]
@@ -56,11 +56,11 @@ class Experiments(object):
                 tp = predict_score * real_score.T
 
                 TP = TP + tp[0, 0]
-                recall = recall + tp[0, 0] / positive_num
+               
             avg_precision = TP / (1 * sample_num_eval)
             mi_avg_recall = TP / real_sum
-            ma_avg_recall = recall / sample_num_eval
-            metrics = metrics + np.array([avg_precision, mi_avg_recall, ma_avg_recall])
+            
+            metrics = metrics + np.array([avg_precision, mi_avg_recall])
 
         return metrics / k_folds
 
